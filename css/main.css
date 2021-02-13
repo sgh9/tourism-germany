@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+:root {
+
+     --primary-dark: #12232E;
+     --primary-light :#007CC7;
+     --secondary-light:#4DA8DA;
+     --primary-shadow:#203647;
+     --secodary-shadow:#EEFBFB;
+    
+
+}
+::selection {
+      color: #111;
+      background-color: var(--secondary-light);
+}
+
+html {
+      font-size: 62.5%;
+}
+
+
+body {
+font-family: 'Open Sans', sans-serif;
+color: #fff;
+
+
+}
+
+.navbar {
+      background-color: var(--primary-light);
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      padding: 0 4rem;
+
+      
+}
+
+.navbar-icon {
+      font-size: 1.7rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      animation: moveX 0.4s ease-in-out;
+      transition:transform 0.8s;
+
+}
+
+.menu-items {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+
+}
+
+.menu-items ul {
+      list-style-type: none;  
+      height: 100%; 
+}  
+
+.item {
+      font-size: 1.7rem;
+      float: left;
+      height: 100%;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+
+}
+.item:hover {
+      background-color: var(--primary-dark);
+
+}
+
+.item a {
+  padding: 1rem;
+}
+
+.header {
+      background: rgb(0,124,199);
+      height: 80vh;
+      background-image:  linear-gradient(90deg, rgba(1,1,1,0.8),rgba(52,62,88,0.9)100%),url('../assets/images/volkerschlachtdenkmal.jpg');
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.header__content {
+
+      max-width:70rem;
+    
+    
+}
+
+main.main {
+      width: 100%;
+      margin:0 auto ;
+}
+section {
+      padding: 10rem 0;
+      color: #000;
+      margin:0 auto ;
+      width:100% ;
+      text-align: center;
+}
+
+section img {
+      width: 100%;
+      height: 25rem;
+     object-fit: cover;
+}
+
+section h1 {
+      text-transform: uppercase;
+}
+
+section h1 span {
+      background-color: var(--primary-light);
+      border-top-right-radius:4.5rem ;
+      border-bottom-left-radius: 4.5rem;
+      padding: 0.3rem;
+      color: #fff;
+}
+
+section.section-two h1 span {
+      background-color: var(--primary-dark);
+      color: #fff;
+      border-top-right-radius:5rem ;
+      padding: 0.3rem;
+      border-bottom-left-radius: 4.5rem;
+}
+
+.section-two {
+      background-color: var(--primary-light);
+      position: relative;
+      padding-bottom: 15rem;
+      color: #fff;
+}
+
+
+.section-two::after {
+      content: "";
+      padding: 2rem;
+      background-color: var(--primary-light);
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      height: 6rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -8%;
+      display: block;
+      margin: 3rem 0;
+
+}
+ .section-three {
+      position: relative;
+    
+ }
+
+.section-three::before {
+      content: "";
+      padding: 3rem;
+      border-radius: 40%;
+      height: 6rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -10%;
+      display: block;
+      margin: 3rem 0;
+      background-color: #fff;
+  
+
+}
+
+.section-four {
+      background-color: var(--primary-light);
+}
+
+.row {
+      display: flex;
+      width: 98%;
+      margin: 0 auto;
+     
+}
+
+.col {
+      width: 31.5%;
+     border-radius: 6px;
+      margin: 3rem;
+}
+
+.section-two button {
+      border: 1px solid #fff;
+
+}
+
+.section-two button:hover {
+      border: 1px solid transparent;
+
+}
+
+.section-text {
+      max-width: 70rem;
+}
+
+.section-three img {
+      width: 15rem;
+      height: 15rem;
+
+}
+
+.section-three img {
+      width: 15rem;
+      height: 15rem;
+
+}
+
+.destinations h1 {
+     text-align: center;
+}
+
+.destinations  {
+    
+      color: #111; 
+}
+
+.destinations img{
+      width: 100%;
+       height: 30rem;
+}
+ 
+.hotels {
+    padding:0 0 10rem 0;
+}
+
+.hotels img{
+      width: 100%;
+       height: 30rem;
+}
+.hotels p{
+    font-size: 1.5rem;
+}
+
+.destinations .row{
+     padding-bottom: 8rem;
+     text-align: center;
+   
+ }
+
+ .hotels .row{
+     padding-bottom: 8rem;
+      text-align: center;
+      color: #111;
+    
+  }
+  .hotels .col{
+  box-shadow: 0 2px 0 rgb(1,1,1,0,3);
+  border: 1px solid #111;
+     
+   }
+  
+.services {
+      color: #111;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+
+}
+
+
+.services img {
+ width: 25%;
+
+}
+
+.service-content {
+      width: 80%;
+      max-width: 60rem;
+      margin: 0 auto;
+      color: #111;
+      text-align: center;
+}
+
+ h1.dest {
+      color:black;
+      text-align: center;
+      margin-top: 3rem;
+ }
+
+
+.footer ul li:hover{
+background-color: var(--primary-light);
+border-radius: 10rem;
+}
+
+
+
+footer span {
+      font-size: 1.5rem;
+}
+
+
+.container-text {
+      color: #000;
+}
